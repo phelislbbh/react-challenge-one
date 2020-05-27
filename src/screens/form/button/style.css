@@ -1,0 +1,33 @@
+.form-button-container {
+}
+
+.form-button-container .form-button-progress-bar {
+	background: #fee3d8;
+	height: 0.5rem;
+	width: 100%;
+	position: relative;
+}
+
+.form-button-container .form-button-progress-bar > div {
+	background-color: #fda383;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#form-button {
+	background: none;
+	border: none;
+	width: 100%;
+	padding: 1.5rem;
+	text-transform: uppercase;
+	color: #fda383;
+	font-size: 1rem;
+	cursor: pointer;
+	background: white;
+}
+
+#form-button[disabled] {
+	color: #fee3d8;
+}

@@ -1,0 +1,98 @@
+.start-screen {
+	min-width: 100wh;
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.start-screen-background {
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+	bottom: -1rem;
+	left: -1rem;
+	background-image: url(../../assets/img/background.png);
+	background-size: cover;
+	filter: blur(0.5rem);
+  	-webkit-filter: blur(0.5rem);
+	z-index: 1;
+}
+
+.start-screen-content {
+	position: relative;
+	z-index: 2;
+	min-width: 100wh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.start-screen-content > div:first-child {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	text-align: center;
+}
+
+.start-screen-avatar-container {
+	position: relative;
+}
+
+.start-screen-content > div:first-child .start-screen-avatar {
+	height: 7rem;
+	width: 7rem;
+	border-radius: 3.5rem;
+	background-image: url(../../assets/img/background.png);
+	background-size: 150px 267px;
+	background-position: -30px -25px;
+}
+
+.start-screen-content > div:first-child .start-screen-help-indicator {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 1rem;
+	background: linear-gradient(#f8ce86, #f6a183);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.start-screen-content > div:first-child h1 {
+	color: white;
+	font-size: 1.75rem;
+	font-weight: normal;
+}
+
+.start-screen-content > div:first-child p {
+	color: #fdfdfd;
+	line-height: 1.6rem;
+}
+
+.start-screen-content > div:last-child {
+	padding: 7vh;
+	display: flex;
+	justify-content: center;
+}
+
+.start-screen-content > div:last-child button {
+	background: none;
+	border: none;
+	border-bottom: 1px solid white;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	padding: 0.5rem 0.25rem;
+	cursor: pointer;
+}
+
+.start-screen-form-screen-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}

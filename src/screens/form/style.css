@@ -1,0 +1,112 @@
+.form-screen {
+	display: flex;
+	min-width: 100wh;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.form-screen .form-screen-header {
+	background-color: #334646;
+	padding: 3rem 2rem 2rem 2rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.form-screen #form-screen-close-button {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 2.5rem;
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+	cursor: pointer;
+}
+
+.form-screen .form-screen-avatar {
+	height: 5rem;
+	width: 5rem;
+	border-radius: 2.5rem;
+	background-image: url(../../assets/img/background.png);
+	background-size: 100px 178px;
+	background-position: -20px -15px;
+}
+
+.form-screen .form-screen-header h1 {
+	color: white;
+	font-size: 1.3rem;
+	line-height: 1.7rem;
+	font-weight: normal;
+}
+
+.form-screen .form-screen-content {
+	background: #efefef;
+	flex: 1;
+	position: relative;
+}
+
+.form-screen-content .form-screen-content-pagination-container {
+	position: absolute;
+	bottom: 1.5rem;
+	left: 1.5rem;
+	z-index: 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.form-screen-content .form-screen-content-pagination-container button {
+	background-color: white;
+	border: none;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 1.5rem;
+	margin-right: 1rem;
+	background-image: url(../../assets/img/back-button.jpg);
+	background-size: cover;
+	cursor: pointer;
+}
+
+.form-screen-content-options {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.form-screen-content-options li {
+	border-bottom: 1px solid #ccc;
+}
+
+.form-screen-content-options li button {
+	border: none;
+	background: none;
+	width: 100%;
+	padding: 1.5rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	position: relative;
+}
+
+.form-screen-content-options li[data-active="true"] button {
+	margin-top: -0.075rem;
+	margin-bottom: -0.075rem;
+	padding: 1.65rem 1.5rem;
+	background: white;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.form-screen-content-options li[data-active="true"] button::after {
+	content: "";
+	background: #fda383;
+	position: absolute;
+	right: 2rem;
+	width: 0.9rem;
+	height: 0.9rem;
+	border-radius: 0.45rem;
+}

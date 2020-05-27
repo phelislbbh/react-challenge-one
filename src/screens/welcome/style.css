@@ -1,0 +1,68 @@
+.welcome-screen {
+	background-image: url(../../assets/img/background.png);
+	background-size: cover;
+	min-width: 100wh;
+	min-height: 100vh;
+	position: relative;
+}
+
+.welcome-screen-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+}
+
+.welcome-screen-content > div {
+	padding: 4rem;
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.welcome-screen-content > div > div:first-child {
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	min-height: 40vh;
+	width: 75%;
+}
+
+.welcome-screen-content > div > div:first-child p {
+	font-size: 1.1rem;
+	font-weight: normal;
+}
+
+.welcome-screen-content > div > div:first-child h1 {
+	font-size: 3.5rem;
+	font-weight: normal;
+}
+
+.welcome-screen-content > div > div:last-child ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	color: white;
+	list-style: none;
+}
+
+.welcome-screen-content > div > div:last-child ul li {
+	min-width: 2rem;
+}
+
+.welcome-screen-content > div > div:last-child ul li a {
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 0.4rem;
+	border: 1px solid white;
+	display: block;
+	line-height: 0px;
+}
+
+.welcome-screen-content > div > div:last-child ul li[data-active="true"] a {
+	background: white;
+}
